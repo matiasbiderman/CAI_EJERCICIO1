@@ -15,43 +15,50 @@ namespace Ejercicio2
             string lista = "";
             int[] numeros = new int[cantnumero];
             int posicion = 0;
-            int cont = 0;
+            bool respuesta = false;
             do
             {
                 numeros[posicion] = posicion + 1;
+                int numeroEvaluar = numeros[posicion];
 
-                for (int i = 1; i <= numeros.GetUpperBound(0); i++)
-                {
-                    if (numeros[posicion] % i == 0)
+
+
+                    int contadorDivisores = 0;
+                    for (int i = 1; i <= numeroEvaluar; i++)
                     {
-                        cont++;
+                        int numero = numeroEvaluar % i;
+                        if (numero == 0)
+                        {
+                            contadorDivisores++;
+                        }
+                        if (contadorDivisores > 2)
+                        {
+                            respuesta = false;
+                        }
+                        if (numeroEvaluar == i && contadorDivisores <= 2)
+                        {
+                            respuesta = true;
+                        }
+                   
                     }
+                if ((numeros[posicion] % 3 == 0) && respuesta)
+                {
+                    lista = numeros[posicion] + " - Es primo y divisible por 3";
                 }
-                if (cont == 2 && numeros[posicion] % 3 == 0)
+                else if (numeros[posicion] % 3 == 0)
                 {
-                    lista = numeros[posicion] + "\t - Es primo y divisible por 3";
+                    lista = numeros[posicion] + " - Es divisible por 3";
                 }
-                /*else if ()
+                else if (respuesta)
                 {
-                    lista = numeros[posicion] + "\t - Es divisible por 3";
+                    lista = numeros[posicion] + " - Es primo";
                 }
-                else if (numeros[posicion] % 3 == 0 && cont == 2)
-                {
-                    lista = numeros[posicion] + "\t - Es primo y divisible por 3";
-
-                }*/
-                
-                /*else if (numeros[posicion] / numeros[posicion] == 1)
-                {
-                    lista = numeros[posicion] + "\t - Es primo";
-                }*/
                 else
                 {
                     lista = numeros[posicion].ToString();
                 }
                 Console.WriteLine(lista);
                 posicion++;
-                cont = 0;
             } while (posicion < cantnumero);
         }
     }
