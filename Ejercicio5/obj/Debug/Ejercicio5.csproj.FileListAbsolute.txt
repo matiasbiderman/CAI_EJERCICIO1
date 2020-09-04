@@ -1,0 +1,7 @@
+C:\Users\Mati\Desktop\CAI\202002C\CAI_EJERCICIO1\Ejercicio5\bin\Debug\Ejercicio5.exe.config
+C:\Users\Mati\Desktop\CAI\202002C\CAI_EJERCICIO1\Ejercicio5\bin\Debug\Ejercicio5.exe
+C:\Users\Mati\Desktop\CAI\202002C\CAI_EJERCICIO1\Ejercicio5\bin\Debug\Ejercicio5.pdb
+C:\Users\Mati\Desktop\CAI\202002C\CAI_EJERCICIO1\Ejercicio5\obj\Debug\Ejercicio5.csprojAssemblyReference.cache
+C:\Users\Mati\Desktop\CAI\202002C\CAI_EJERCICIO1\Ejercicio5\obj\Debug\Ejercicio5.csproj.CoreCompileInputs.cache
+C:\Users\Mati\Desktop\CAI\202002C\CAI_EJERCICIO1\Ejercicio5\obj\Debug\Ejercicio5.exe
+C:\Users\Mati\Desktop\CAI\202002C\CAI_EJERCICIO1\Ejercicio5\obj\Debug\Ejercicio5.pdb

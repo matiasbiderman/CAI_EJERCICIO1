@@ -13,7 +13,6 @@ namespace Ejercicio4
             string palabra1;
             string palabra2;
             string aux1;
-            string aux2;
             do
             {
                 aux1 = "";
@@ -24,30 +23,23 @@ namespace Ejercicio4
                     Console.WriteLine("Ingresar palabra1 valida");
                 }
 
-
                 for (int i = palabra1.Length - 1; i >= 0; i--)
                 {
                     aux1 = aux1 + palabra1[i];
 
                 }
 
-
             } while (palabra1 == "");
 
             do
             {
-                aux2 = "";
                 Console.WriteLine("Ingresar palabra 2");
                 palabra2 = Console.ReadLine().ToUpper();
                 if (palabra2 == "")
                 {
                     Console.WriteLine("Ingresar palabra2 valida");
                 }
-               /* for (int i = 1; i >= palabra2.Length; i++)
-                {
-                    aux2 = aux2 + palabra2[i];
-
-                }*/
+               
             } while (palabra2 == "");
 
             if (aux1 == palabra2)
