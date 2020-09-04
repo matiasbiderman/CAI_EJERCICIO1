@@ -29,7 +29,7 @@ namespace Ejercicio2
                         int numero = numeroEvaluar % i;
                         if (numero == 0)
                         {
-                            contadorDivisores++;
+                        contadorDivisores++;
                         }
                         if (contadorDivisores > 2)
                         {
