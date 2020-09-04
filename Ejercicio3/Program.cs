@@ -10,7 +10,7 @@ namespace Ejercicio3
         static void Main(string[] args)
         {
             string palabra;
-
+            
             do
             {
                 string aux = "";
@@ -28,16 +28,22 @@ namespace Ejercicio3
                 for (int i = palabra.Length - 1; i >= 0; i--)
                 {
                     aux = aux + palabra[i];
+                    
                 }
-                if (aux == palabra)
-                {
-                    Console.WriteLine("ES PALINDROMO");
-                }
-                else
-                {
-                    Console.WriteLine("NO ES PALINDROMO");
-                }
-            } while (palabra != "");
+           
+            if (aux == palabra)
+            {
+                Console.WriteLine("ES PALINDROMO");
+            }
+            else
+            {
+                Console.WriteLine("NO ES PALINDROMO");
+            }
+        } while (palabra != "");
+            //  
+
+            Console.WriteLine("Presione una tecla para salir");
+            Console.ReadKey();
         }
     }
 }
